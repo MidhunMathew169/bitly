@@ -1,0 +1,6 @@
+# General folders to ignore
+node_modules/
+dist/
+build/
+
+url-shortener-backend/.env
