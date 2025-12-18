@@ -4,7 +4,6 @@ const cors = require('cors');
 const connectDB = require('./config/db');
 const path = require('path');
 const authRoute = require('./routes/authRoute');
-console.log("Auth routes loaded:",authRoute);
 const urlRoutes = require('./routes/urlRoutes');
 const redirectRoutes = require('./routes/redirect');
 
@@ -31,7 +30,4 @@ app.use("/api/url",urlRoutes);
 //URL redirection route
 app.use("/",redirectRoutes);
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-    console.log(`server running on port ${PORT}`);
-});
+module.exports = app;

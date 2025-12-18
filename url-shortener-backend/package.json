@@ -1,7 +1,8 @@
 {
   "name": "url-shortener-backend",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "api/index.js",
+  "type": "commonjs",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
