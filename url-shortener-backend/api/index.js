@@ -1,11 +1,12 @@
 require("dotenv").config();
 const express = require('express');
 const cors = require('cors');
-const connectDB = require('./config/db');
+
+const connectDB = require('../config/db');
 const path = require('path');
-const authRoute = require('./routes/authRoute');
-const urlRoutes = require('./routes/urlRoutes');
-const redirectRoutes = require('./routes/redirect');
+const authRoute = require('../routes/authRoute');
+const urlRoutes = require('../routes/urlRoutes');
+const redirectRoutes = require('../routes/redirect');
 
 const app = express();
 
