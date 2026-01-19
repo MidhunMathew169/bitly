@@ -22,7 +22,10 @@ const UrlRow = ({ urlObj, onDelete }) => {
         }
     };
 
-    const shortUrl = urlObj.shortUrl || `${window.location.origin}/${urlObj.code}`;
+    const shortUrl = urlObj.shortUrl;
+    if(!shortUrl){
+        throw new Error('Backend did not return short url');
+    }
 
     return (
         <tr className="bg-white">
