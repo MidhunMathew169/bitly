@@ -98,7 +98,7 @@ const Dashboard = () => {
                 {/* Header */}
                 <div className="flex flex-col sm:flex-row items-center justify-between mb-8 gap-4">
                     <div>
-                        <h2 className="text-2xl font-bold text-gray-800">Hello, {user?.name}</h2>
+                        <h2 className="text-2xl font-bold text-gray-800">Hello {user?.name},</h2>
                         <p className="text-gray-500 text-sm">Welcome to your dashboard</p>
                     </div>
                     <button
